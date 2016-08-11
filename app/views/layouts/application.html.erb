@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Implementation</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+   <%= yield :head %>
+   <title>Implementation</title>
+   
+</head>
+<body>
+<header>
+    <h1><center>JSGrid Example</center></h1>
+</header>
+
+<%= yield %>
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<%= yield :scripts %>
+</body>
+</html>
